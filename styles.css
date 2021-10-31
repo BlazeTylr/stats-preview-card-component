@@ -132,8 +132,9 @@ h1 {
 }
 
 .stat-text {
-  font-size: 0.8rem;
-  font-family: Lexend;
+  font-size: 0.7rem;
+  font-family: Lexend Deca;
+  font-weight: 400;
   text-transform: uppercase;
   color: var(--Slightly-transparent-white-main-paragraph);
 }
