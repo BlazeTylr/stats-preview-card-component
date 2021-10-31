@@ -6,6 +6,15 @@ The designs were created to the following widths:
 - Desktop: 1440px
 
 ////////////////////////////////////////////////////////
+
+-FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+-Spacing system (px)
+ 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
 ## Colors
 
 ### Primary
@@ -35,3 +44,104 @@ The designs were created to the following widths:
 
 - Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
 - Weights: 400 */
+
+:root {
+  /*Primary Colors*/
+  --Very-dark-blue: hsl(233, 47%, 7%);
+  --Dark-desaturated-blue: hsl(244, 38%, 16%);
+  --Soft-violet: hsl(277, 64%, 61%);
+
+  /*Neutral Colors*/
+  --White: hsl(0, 0%, 100%);
+  --Slightly-transparent-white-main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --Slightly-transparent-white-stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+} */
+
+body {
+  font-family: Inter;
+  color: var(--Slightly-transparent-white-main-paragraph);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.section-stats-card {
+  padding: 8rem 0 12.8rem;
+  background-color: var(--Very-dark-blue);
+}
+
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.stats-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--Dark-desaturated-blue);
+}
+
+.stats-card-textbox {
+  margin: 4.2rem 4rem;
+  /* padding: 2rem 4rem 6.4rem 4rem;
+  margin: 2rem 2rem 2.6rem 0.6rem; */
+}
+
+.stats-card-textbox span {
+  color: var(--Soft-violet);
+}
+
+.stats-card-textbox h1 {
+  margin-bottom: 2rem;
+}
+
+.stats-card-textbox p {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  margin-bottom: 5rem;
+  margin-right: 3rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  line-height: 1.6;
+}
+
+.stat-num {
+  font-weight: 700;
+  font-size: 1.4rem;
+  columns: var(--Slightly-transparent-white-stat-headings);
+}
+
+.stat-text {
+  font-size: 0.8rem;
+  font-family: Lexend;
+  text-transform: uppercase;
+  color: var(--Slightly-transparent-white-main-paragraph);
+}
+
+.stats-card-img-box {
+  background-image: linear-gradient(
+      hsla(277, 70%, 48%, 0.5),
+      hsla(277, 70%, 48%, 0.5)
+    ),
+    url(../images/image-header-desktop.jpg);
+}
