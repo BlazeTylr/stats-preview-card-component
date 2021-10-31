@@ -11,9 +11,9 @@
     padding: 0 2rem;
   }
   .stats-card {
-    display: flex;
-    flex-direction: column;
     /* grid-template-columns: repeat(2, 1fr); */
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .stats-card-img-box {
@@ -25,7 +25,6 @@
     flex-direction: column;
     text-align: center;
     margin: 2.2rem 2rem;
-    /* padding: 0 1rem; */
   }
 
   .stats-card-textbox p {
@@ -39,5 +38,16 @@
 
   .stat-num-text {
     margin: 0.8rem 0;
+  }
+
+  .stats-card-img-box {
+    background-image: linear-gradient(
+        hsla(277, 70%, 48%, 0.5),
+        hsla(277, 70%, 48%, 0.5)
+      ),
+      url(./images/image-header-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 8.4rem 0;
   }
 } ;

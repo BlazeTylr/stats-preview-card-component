@@ -144,5 +144,5 @@ h1 {
       hsla(277, 70%, 48%, 0.5),
       hsla(277, 70%, 48%, 0.5)
     ),
-    url(../images/image-header-desktop.jpg);
+    url(./images/image-header-desktop.jpg);
 }
