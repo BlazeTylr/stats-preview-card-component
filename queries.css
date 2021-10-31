@@ -1,0 +1,43 @@
+/* ****************************** */
+/* BELOW 544PX (Phones) */
+/* ****************************** */
+
+@media (max-width: 34em) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+  .stats-card {
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: repeat(2, 1fr); */
+  }
+
+  .stats-card-img-box {
+    display: 100%;
+  }
+
+  .stats-card-textbox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2.2rem 2rem;
+    /* padding: 0 1rem; */
+  }
+
+  .stats-card-textbox p {
+    margin: 0 2.4rem 2rem;
+  }
+
+  .stats {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stat-num-text {
+    margin: 0.8rem 0;
+  }
+} ;
