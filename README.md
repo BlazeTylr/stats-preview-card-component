@@ -1,1 +1,1 @@
-# Stats preview card component
+## My solution: https://blazetylr.github.io/stats-preview-card-component/
